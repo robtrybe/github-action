@@ -7,6 +7,6 @@ on:
     test:
       runs-on: ubuntu-latest
       steps:
-        - name: First Command
-        run: echo "Hello World!!!"
+      - name: First Command
+      run: echo "Hello World!!!"
          
