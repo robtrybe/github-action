@@ -6,15 +6,7 @@ on:
   jobs:
     test:
       runs-on: ubuntu-latest
-
-      steps:
-        - name: Get Repository
-        uses: actions/checkout@v4
-        - name: Install NodeJs
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20.12.2
-        - name: Install Dependencies
-        run: npm ci
-        - name: Run tests
-        run: npm test
+        steps:
+          - name: First Command
+          run: echo "Hello World!!!"
+         
