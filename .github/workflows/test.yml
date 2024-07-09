@@ -5,8 +5,8 @@ on:
       - main
 jobs:
   test:
-      runs-on: ubuntu-latest
-        steps:
-        - name: First Command
-        run: echo "Hello World!!!"
+    runs-on: ubuntu-latest
+    steps:
+      - name: First Command
+      run: echo "Hello World!!!"
          
