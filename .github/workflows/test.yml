@@ -20,6 +20,7 @@ jobs:
         run: npm test
   deploy:
     runs-on: ubuntu-latest
+    needs: test
     steps:
       - name: Recuperando Repositório
         uses: actions/checkout@v4
