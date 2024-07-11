@@ -8,14 +8,27 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: First Command
+      - name: Recuperando Repositório
         uses: actions/checkout@v4
-      - name: Install NodeJs
+      - name: Instando NodeJs
         uses: actions/setup-node@v4
         with:
           node-version: 20.12.2
-      - name: Install Dependencies
+      - name: Instalando Dependencias
         run: npm ci
-      - name: Run Tests
+      - name: Rodando Testes
         run: npm test
-         
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Recuperando Repositório
+        uses: actions/checkout@v4
+      - name: Instando NodeJs
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.12.2
+      - name: Instalando Dependencias
+        run: npm ci
+      - name: Fazendo Build do Projeto
+        run: npm run build
+      - name: Fazendo deploy...Aguarde
