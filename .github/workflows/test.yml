@@ -1,4 +1,5 @@
 name: First WorlkFlow
+# Evento que acionará o fluxo de trabalho [push, event_dispatch]
 on:
   push:
     branches:
