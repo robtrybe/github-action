@@ -5,4 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Exibindo Informação sobre o repositório
-      run: echo "${{ github.repository }}"
+        run: echo "${{ github.repository }}"
