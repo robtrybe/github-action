@@ -6,3 +6,5 @@ jobs:
     steps:
       - name: Exibindo Informação sobre o repositório
         run: echo "${{ github.repository }}"
+        # Contextos são informações de metadados fornecidos pelo github
+        # Podemos usar expressões para acessa - las através da interpolação
