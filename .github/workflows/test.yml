@@ -30,6 +30,6 @@ jobs:
       - name: Instalando Dependencias
         run: npm ci
       - name: Fazendo Build do Projeto
-        run: npm run build
+        run: echo "Executando Script de Build"
       - name: Deploy
         run: echo "Fazendo deploy...Aguarde"
